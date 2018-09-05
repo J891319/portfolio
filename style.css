@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Josefin+Slab');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+}
+
+h1 {
+    font-family: 'Josefin Slab';
+    font-size: 48px;
+    color: white;
+    margin: 20px;
+}
+
+#intro {
+    text-align: center;
+    background: url("https://i.imgur.com/QDxGPlV.png");
+    background-size: cover;
+    height: 500px;
+    /*   	max-height: 100vh; */
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .5);
+    position: relative;
+    z-index: 2;
+}
+
+#intro img{
+    width: 150px;
+}
+
+#aboutContainer {
+    border: none;
+    padding: 40px;
+    min-height: auto;
+}
+
+#aboutContainer+div {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px -2px 3px rgba(0, 0, 0, .25);
+}
+
+#aboutContainer h2 {
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px dotted black;
+}
+
+.container {
+ 	width: 100%;
+    padding: 40px;
+    border-bottom: 1px solid silver;
+  
+  	background-color: mintcream;
+  
+    overflow:auto;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+.container img {
+    height: 200px;
+    max-width: 90%;
+/*     margin-bottom: 10px; */
+}
+
+.container div {
+    display: inline;
+}
+
+.container div h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.left {
+	background-image: url("https://s2.qwant.com/thumbr/0x0/e/d/1a3d800695d4c887f6051abe01a9199e868d9751601c01a82b449595b46ced/fine-blue-background-pattern.jpg?u=http%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F130000%2Fnahled%2Ffine-blue-background-pattern.jpg&q=0&b=1&p=0&a=1");
+	color: black;
+}
+
+.right ul {
+	float: right;
+}
+
+.right {
+    text-align: right;
+}
+
+.right img {
+    float: right;
+    margin-left: 20px;
+}
+
+.left img {
+    float: left;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #intro {
+        height: 100vh;
+    }
+    #aboutMe {
+        width: 60%;
+    }
+    .container {
+        text-align: center;
+        padding: 30px;
+    }
+    .container div {
+        display: block;
+    }
+    .container div p {
+        text-align: left;
+    }
+    .container img {
+        height: auto;
+        max-height: 200px;
+        max-width: 80%;
+        display: block;
+    }
+    .left img,
+    .right img {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
